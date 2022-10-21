@@ -29,6 +29,6 @@ class Maker
     planned_expiration_date = issue_date + rand(1..(laboriousness - 1)) * 86_400
     real_expiration_date = deadline - 86_400
 
-    "(#{laboriousness}, '#{Time.at(issue_date).to_s[0..-7]}', '#{Time.at(planned_expiration_date).to_s[0..-7]}', '#{Time.at(real_expiration_date).to_s[0..-7]}', #{@project_id}, #{@employee_id}),"
+    "\t(#{laboriousness}, '#{Time.at(issue_date).to_s[0..-7]}', '#{Time.at(planned_expiration_date).to_s[0..-7]}', '#{Time.at(real_expiration_date).to_s[0..-7]}', #{@project_id}, #{@employee_id}),"
   end
 end
